@@ -1,0 +1,155 @@
+html{
+    scroll-behavior: smooth;
+}
+.bg-blue {
+    background-color: #202C45 !important;
+}
+  
+.bg-red {
+    background-color: #E81C2E !important;
+}
+.text-vlue{
+    color: #202C45 !important;
+}
+.text-red{
+    color: #E81C2E !important;
+}
+.nc-icon {
+    width: 42px;
+    height: 42px;
+    background-color: rgba($color: #fff, $alpha: 0.2);
+}
+// .fade-in {
+//     transform: translateY(50px) translateZ(0);
+//     transition-delay: 0.7s;
+//     transition: 1s;
+//     opacity: 0;
+// }
+// .fadeIn {
+//     opacity:0;
+// }  
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+ .view-element{
+   opacity: 1;
+   transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+#slider{
+    overflow: hidden;
+    height: 106vh;
+    position: relative;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .over{
+        position: absolute;
+        z-index: 5;
+    }
+    h2{
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+    h3{
+        font-size: 90px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+// #slider{
+//     overflow: hidden;
+//     height: 95vh;
+//     /* position: relative; */
+//     width: 100%;
+//   }
+//   #slider img{
+//     position: absolute;
+//     width: 100%;
+//   }
+.scrollToTop{
+    height: 45px;
+    width: 45px;
+    //padding:10px; 
+    text-align:center;
+    color: #E81C2E;
+    position:fixed;
+    bottom:40px;
+    right:40px;
+    i{
+        font-size: 25px;
+    }
+    //display:none;
+}
+@media screen and (max-width: 1250px){
+    #slider h3{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 768px){
+    #slider{
+        height: 58vh;
+        h2{
+            font-size: 18px;
+        }
+        h3{
+            font-size: 45px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    #slider{
+        h3{
+            font-size: 30px;
+        }
+        a{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 576px){
+    #slider{
+        h2{
+            font-size: 16px;
+        }
+        h3{
+            font-size: 25px;
+        }
+        p{
+            font-size: 14px;
+        }
+        a{
+            padding: 7px 25px 9px 25px;
+            font-size: 10px;
+        }
+    }
+    .scrollToTop{
+        height: 30px;
+        width: 30px;
+        bottom: 15px;
+        right: 15px;
+        i{
+            font-size: 15px;
+        }
+    }
+}
+// #back-to-top:hover{
+//     background-color: #202C45;
+// }
